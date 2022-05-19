@@ -1,0 +1,29 @@
+spring:
+  message: MESSAGE
+configuration:
+  projectName: ProjectName-Test
+  properties: PROPERTIES-TEST
+
+  #List properties
+  defaultRecipients[0]: admin@mail.com
+  defaultRecipients[1]: owner@mail.com
+
+  #Map Properties
+  additionalHeaders:
+    redelivery: true
+    secure: true
+
+  #Object properties
+  credentials:
+    username: john
+    password: password
+    authMethod: SHA1
+
+#Simple properties - default properties
+mail:
+  hostname: mailer@mail.com
+  port: 9000
+  from: mailer@mail.com
+
+
+
