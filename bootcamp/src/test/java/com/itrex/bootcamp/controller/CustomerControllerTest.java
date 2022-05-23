@@ -38,8 +38,8 @@ class CustomerControllerTest {
     @MockBean
     private CustomerServer customerServer;
 
-    private Customer olga = new Customer(1l, "olga@mail.com", "olga");
-    private Customer kate = new Customer(2l, "kate@mail.com", "kate");
+    private Customer olga = new Customer(1L, "olga@mail.com", "olga");
+    private Customer kate = new Customer(2L, "kate@mail.com", "kate");
 
     @BeforeEach
     void setUp() {
