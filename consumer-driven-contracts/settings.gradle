@@ -1,0 +1,4 @@
+rootProject.name = 'consumer-driven-contracts'
+
+include 'contract-rest-service'
+include 'contract-rest-client'

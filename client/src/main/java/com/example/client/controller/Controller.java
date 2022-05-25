@@ -11,10 +11,17 @@ public class Controller {
 
     @Value("${message:Hello default}")
     private String message;
+    @Value("${my.greeting}")
+    private String greeting;
 
     @RequestMapping("/")
     public String home() {
         return "Hello World!";
+    }
+
+    @RequestMapping("/greeting")
+    String getGreeting() {
+        return this.greeting;
     }
 
     @RequestMapping("/message")
@@ -22,3 +29,4 @@ public class Controller {
         return this.message;
     }
 }
+
