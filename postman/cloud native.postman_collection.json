@@ -96,7 +96,19 @@
 					"name": "Client http://localhost:9000/message/1",
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/message/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"message",
+								"1"
+							]
+						}
 					},
 					"response": []
 				}
@@ -170,20 +182,48 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/message",
+							"raw": "http://localhost:8080/greeting",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"message"
+								"greeting"
 							]
 						}
 					},
 					"response": []
 				}
 			]
+		},
+		{
+			"name": "SendEmail",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n        \"email\": \"olga.dobrodey@itrexgroup.com\",\r\n        \"text\": \"this is my first email\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/email",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"email"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
