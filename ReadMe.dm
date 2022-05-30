@@ -1,1 +1,1 @@
-[https://habr.com/ru/company/oleg-bunin/blog/649319/].
+[https://habr.com/ru/company/oleg-bunin/blog/649319/].//
